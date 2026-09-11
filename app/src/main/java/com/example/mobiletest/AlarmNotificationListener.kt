@@ -1,63 +1,95 @@
 package com.example.mobiletest
 
+import android.os.Handler
+import android.os.Looper
 import android.service.notification.NotificationListenerService
 import android.service.notification.StatusBarNotification
 import android.util.Log
 
 class AlarmNotificationListener : NotificationListenerService() {
 
-    override fun onNotificationPosted(sbn: StatusBarNotification) {
+    private val handler = Handler(Looper.getMainLooper())
+
+    override fun onNotificationPosted(
+        sbn: StatusBarNotification
+    ) {
 
         val notification = sbn.notification
 
-        Log.d("SNOOZEBOT", "Notification received!")
-        Log.d("SNOOZEBOT", "Package: ${sbn.packageName}")
+        Log.d(
+            "SNOOZEBOT",
+            "Notification from: ${sbn.packageName}"
+        )
 
-        val title = notification.extras.getString("android.title")
-        val text = notification.extras.getCharSequence("android.text")
+        val actions = notification.actions ?: return
 
-        Log.d("SNOOZEBOT", "Title: $title")
-        Log.d("SNOOZEBOT", "Text: $text")
+        for (action in actions) {
 
-        val actions = notification.actions
+            val actionTitle = action.title.toString()
 
-        if (actions != null) {
+            Log.d(
+                "SNOOZEBOT",
+                "Action found: $actionTitle"
+            )
 
-            for (action in actions) {
+            if (
+                actionTitle.equals(
+                    "Remind me later",
+                    ignoreCase = true
+                )
+            ) {
 
-                val actionTitle = action.title.toString()
+                val preferences =
+                    getSharedPreferences(
+                        "snoozebot",
+                        MODE_PRIVATE
+                    )
+
+                val delaySeconds =
+                    preferences.getInt(
+                        "delay_seconds",
+                        10
+                    )
 
                 Log.d(
                     "SNOOZEBOT",
-                    "Action found: $actionTitle"
+                    "Alarm detected!"
                 )
 
-                // Look for the "Remind me later" action
-                if (actionTitle.equals("Remind me later", ignoreCase = true)) {
+                Log.d(
+                    "SNOOZEBOT",
+                    "Snoozing in $delaySeconds seconds..."
+                )
 
-                    Log.d(
-                        "SNOOZEBOT",
-                        "REMIND ME LATER FOUND! Triggering it..."
-                    )
+                handler.postDelayed({
 
                     try {
+
                         action.actionIntent.send()
 
                         Log.d(
                             "SNOOZEBOT",
-                            "Action triggered successfully! 😴"
+                            "Alarm snoozed automatically! 😴"
                         )
 
                     } catch (e: Exception) {
 
                         Log.e(
                             "SNOOZEBOT",
-                            "Could not trigger action",
+                            "Failed to trigger Remind me later",
                             e
                         )
                     }
-                }
+
+                }, delaySeconds * 1000L)
+
+                break
             }
         }
+    }
+
+    override fun onDestroy() {
+        handler.removeCallbacksAndMessages(null)
+        super.onDestroy()
     }
 }
