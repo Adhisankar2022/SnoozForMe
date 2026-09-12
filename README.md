@@ -85,9 +85,10 @@ Alternatively, download the latest APK from the **Releases** section and install
 After installation, open the app and enable **Notification Access** before using the automatic snooze feature.
 
 # Screenshot
-<img width="1080" height="2388" alt="WhatsApp Image 2026-09-12 at 7 44 29 AM" src="https://github.com/user-attachments/assets/9985f3fc-0ebc-4559-944f-15b309067145" />
 <img width="1920" height="1080" alt="Screenshot (257)" src="https://github.com/user-attachments/assets/7d31894e-a2e1-4832-8bcf-7e21b05209d9" />
 <img width="352" height="787" alt="Screenshot 2026-09-12 074207" src="https://github.com/user-attachments/assets/42283b49-1193-4d77-b924-b465c4768ccf" />
+<img width="1080" height="2388" alt="WhatsApp Image 2026-09-12 at 7 44 29 AM" src="https://github.com/user-attachments/assets/9985f3fc-0ebc-4559-944f-15b309067145" />
+
 
 
 
