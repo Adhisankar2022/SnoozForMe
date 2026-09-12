@@ -1,49 +1,55 @@
+# Snooze For Me
+
 ## Basic Details
 
-# CLUS
+### Team Name
+
+CLUS
 
 ### Team Members
-Adhi Sankar A - [Carmel Collage of Engineering and Technology]
-Alex K V - [Carmel Collage of Engineering and Technology]
 
-### Project Description
+- Adhi Sankar A - Carmel College of Engineering and Technology
+- Alex K V - Carmel College of Engineering and Technology
+
+## Project Description
 
 **Snooze For Me** is an Android app that automatically snoozes your alarm notifications so you don't have to lift a finger.
 
-Just choose how many seconds you want the app to wait, and Snooze For Me will detect the alarm and press **"Remind me later"** for you. Because apparently even pressing snooze is too much effort. 
+Just choose how many seconds you want the app to wait, and Snooze For Me will detect the alarm and press **"Remind me later"** for you. Because apparently even pressing snooze is too much effort.
 
-### The Problem (that doesn't exist)
+## The Problem (that doesn't exist)
 
 Waking up is hard.
 
 But what's even harder?
 
-**Pressing the snooze button yourself.** 
+**Pressing the snooze button yourself.**
 
 Why should you waste precious energy reaching for your phone, finding the alarm, and pressing "Remind me later" when an app can do it for you?
 
 We identified this completely unnecessary problem and decided it absolutely needed solving.
 
-### The Solution (that nobody asked for)
+## The Solution (that nobody asked for)
 
-Introducing **Snooze For Me** — your personal alarm procrastinator. 
+Introducing **Snooze For Me** — your personal alarm procrastinator.
+
 The app watches for supported alarm notifications and, after your chosen delay, automatically presses **"Remind me later"** on your behalf.
 
 So when your alarm goes:
 
- **ALARM!**
+**ALARM!**
 
 Snooze For Me:
 
 > "Don't worry, I've got this."
 
- *waits a few seconds*
+*waits a few seconds*
 
- **Snoozed.**
+**Snoozed.**
 
 Because if technology can't help us avoid waking up, what's the point?
 
-# Installation
+## Installation
 
 1. Download the latest **Snooze For Me APK** from the **Releases** section of this repository.
 
@@ -63,7 +69,7 @@ Because if technology can't help us avoid waking up, what's the point?
 
 The app is now ready to automatically snooze supported alarm notifications.
 
-# Run
+## Run
 
 ### Using Android Studio
 
@@ -84,13 +90,19 @@ Alternatively, download the latest APK from the **Releases** section and install
 
 After installation, open the app and enable **Notification Access** before using the automatic snooze feature.
 
-# Screenshot
-<img width="1920" height="1080" alt="Screenshot (257)" src="https://github.com/user-attachments/assets/7d31894e-a2e1-4832-8bcf-7e21b05209d9" />
-<img width="352" height="787" alt="Screenshot 2026-09-12 074207" src="https://github.com/user-attachments/assets/42283b49-1193-4d77-b924-b465c4768ccf" />
-<img width="352" height="787" alt="WhatsApp Image 2026-09-12 at 7 44 29 AM" src="https://github.com/user-attachments/assets/9985f3fc-0ebc-4559-944f-15b309067145" />
-# Video
-https://1drv.ms/v/c/c5948563123c06d0/IQCZBefmXumuRZ67UwFa7h3UAUxEKx0ER-StCrCgA3__kho?e=snvcIB
-# Schematic
+## Screenshots
+
+<img width="1920" height="1080" alt="Snooze For Me Screenshot" src="https://github.com/user-attachments/assets/7d31894e-a2e1-4832-8bcf-7e21b05209d9" />
+
+<img width="352" height="787" alt="Snooze For Me App Interface" src="https://github.com/user-attachments/assets/42283b49-1193-4d77-b924-b465c4768ccf" />
+
+<img width="352" height="787" alt="Snooze For Me App" src="https://github.com/user-attachments/assets/9985f3fc-0ebc-4559-944f-15b309067145" />
+
+## Video
+
+[Watch the Snooze For Me project demonstration](https://1drv.ms/v/c/c5948563123c06d0/IQCZBefmXumuRZ67UwFa7h3UAUxEKx0ER-StCrCgA3__kho?e=snvcIB)
+
+## Schematic & Circuit
 
 Snooze For Me is a software-based Android application, so no external electronic components, wiring, or physical circuit are required.
 
@@ -121,13 +133,3 @@ The system works entirely through the Android smartphone's notification system.
                        |
                        v
                 Alarm Snoozed
-
-```
-# Contributors:
-Adhi Sankar A
-Alex K V
-
-
-
-
-
