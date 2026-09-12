@@ -1,177 +1,85 @@
-# 😴 Snooze For Me
+## Basic Details
 
-> Your personal alarm procrastinator 
+# CLUS
 
-Snooze For Me is an Android app that automatically presses the **"Remind me later"** button on your alarm notifications after a delay you choose.
+### Team Members
+Adhi Sankar A - [Carmel Collage of Engineering and Technology]
+Alex K V - [Carmel Collage of Engineering and Technology]
 
-Because apparently even pressing Snooze is too much work. 
+### Project Description
 
----
+**Snooze For Me** is an Android app that automatically snoozes your alarm notifications so you don't have to lift a finger.
 
-## 🎯 What Does It Do?
+Just choose how many seconds you want the app to wait, and Snooze For Me will detect the alarm and press **"Remind me later"** for you. Because apparently even pressing snooze is too much effort. 
 
-Snooze For Me watches your alarm notifications and automatically triggers the **"Remind me later"** action after your selected delay.
+### The Problem (that doesn't exist)
 
-For example:
+Waking up is hard.
 
-**Alarm rings 🔔**
+But what's even harder?
 
-↓  
+**Pressing the snooze button yourself.** 
 
-Wait 10 seconds ⏱️
+Why should you waste precious energy reaching for your phone, finding the alarm, and pressing "Remind me later" when an app can do it for you?
 
-↓
+We identified this completely unnecessary problem and decided it absolutely needed solving.
 
-**Snooze automatically 😴**
+### The Solution (that nobody asked for)
 
-No need to touch your phone.
+Introducing **Snooze For Me** — your personal alarm procrastinator. 
+The app watches for supported alarm notifications and, after your chosen delay, automatically presses **"Remind me later"** on your behalf.
 
----
+So when your alarm goes:
 
-## ✨ Features
+ **ALARM!**
 
-- 😴 Automatic alarm snoozing
-- ⏱️ Customizable snooze delay
-- 🎚️ Delay from **1–60 seconds**
-- 🔘 Enable/disable the bot
-- 🔔 Notification Access status
-- 📊 Snooze counter
-- 📱 Simple and modern Android UI
-- 😂 Built for the Useless Hackathon
+Snooze For Me:
 
-### 🚧 Coming Soon
+> "Don't worry, I've got this."
 
-- 🎬 Surprise meme/video after 3 snoozes
-- 🔊 Video with audio
-- 🤯 More ridiculous surprises
+ *waits a few seconds*
 
----
+ **Snoozed.**
 
-## 🛠️ How It Works
+Because if technology can't help us avoid waking up, what's the point?
 
-Snooze For Me uses Android's **Notification Listener Service**.
+# Installation
 
-When an alarm notification appears, the app checks its available notification actions.
+1. Download the latest **Snooze For Me APK** from the **Releases** section of this repository.
 
-If it finds:
+2. Install the APK on your Android device.
 
-> **Remind me later**
+3. Open **Snooze For Me**.
 
-the app waits for the number of seconds selected by the user and triggers that action automatically.
+4. Tap **Enable Notification Access**.
 
----
+5. Find **Snooze For Me** in the Notification Access settings and enable it.
 
-## 📱 Setup
+6. Return to the app and make sure it shows **Connected**.
 
-### 1. Install the APK
+7. Set your preferred **Snooze Delay** between 1 and 60 seconds.
 
-Download the latest APK from the **GitHub Releases** section.
+8. Turn on the **Snooze For Me** switch.
 
-### 2. Open Snooze For Me
+The app is now ready to automatically snooze supported alarm notifications.
 
-Launch the app after installation.
+# Run
 
-### 3. Enable Notification Access
+### Using Android Studio
 
-Tap:
+1. Clone or download this repository.
+2. Open the project in **Android Studio**.
+3. Allow Android Studio to sync the Gradle files.
+4. Connect an Android device or start an Android Emulator.
+5. Enable **USB Debugging** on the Android device if required.
+6. Select the device from the device selector in Android Studio.
+7. Click the **Run** button.
+8. Once the app is installed, open **Snooze For Me**.
+9. Enable **Notification Access** from the app.
+10. Set the desired snooze delay and enable the bot.
 
-**Enable Notification Access**
+### Using the APK
 
-Then find **Snooze For Me** in Android's Notification Access settings and enable it.
+Alternatively, download the latest APK from the **Releases** section and install it directly on an Android device.
 
-### 4. Choose Your Delay
-
-Use the slider to choose how long Snooze For Me should wait before automatically snoozing an alarm.
-
-You can choose between:
-
-**1–60 seconds**
-
-### 5. Enable the Bot
-
-Make sure the **Snooze For Me** switch is enabled.
-
-You're ready! 🎉
-
----
-
-## 😂 Example
-
-Imagine your alarm goes off at:
-
-**7:00 AM**
-
-You set the delay to:
-
-**10 seconds**
-
-At 7:00 AM:
-
-🔔 Alarm rings
-
-**Snooze For Me:**  
-*"Don't worry bro, I got this."* 😴
-
-10 seconds later...
-
-💤 **Alarm snoozed automatically**
-
----
-
-## ⚠️ Important
-
-Snooze For Me requires **Notification Access** to detect and interact with alarm notifications.
-
-The app cannot automatically snooze alarms if Notification Access is disabled.
-
-The exact notification action may also depend on the alarm/clock application and Android version being used.
-
----
-
-## 🔐 Permissions
-
-Snooze For Me does not require your contacts, camera, microphone, or location.
-
-It requires:
-
-- 🔔 Notification Listener Access
-
-This allows the app to read notification information and interact with supported notification actions.
-
----
-
-## 🧑‍💻 Built With
-
-- **Kotlin**
-- **Android Studio**
-- **Jetpack Compose**
-- **Material 3**
-- **Android NotificationListenerService**
-
----
-
-## 🚀 Future Ideas
-
-- 🎬 Surprise video after 3 snoozes
-- 🔊 Custom meme sounds
-- 😂 Different memes for different snooze counts
-- 🏆 "Snooze Champion" statistics
-- 🤖 More chaotic alarm behavior
-
----
-
-## 🏆 Useless Hackathon
-
-Built for the **Useless Hackathon**.
-
-The goal?
-
-Make something completely unnecessary...
-
-but somehow useful. 😂
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+After installation, open the app and enable **Notification Access** before using the automatic snooze feature.
